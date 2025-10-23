@@ -7,7 +7,7 @@ df.head()
 
 # %%
 
-engine = sqlalchemy.create_engine("sqlite:///data/tmw.db")
+engine = sqlalchemy.create_engine("sqlite:///../data/tmw.db")
 
 df.to_sql("points", engine, if_exists="replace", index=False)
 
